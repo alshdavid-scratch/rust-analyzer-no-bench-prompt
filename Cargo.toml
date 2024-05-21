@@ -1,0 +1,17 @@
+[package]
+name = "rust-analyzer-no-bench-prompt"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bench]]
+name = "rust-analyzer-no-bench-prompt_benchmarks"
+harness = false
+path = "bench.rs"
+
+[dependencies]
+
+[dev-dependencies]
+divan = "0.*"
